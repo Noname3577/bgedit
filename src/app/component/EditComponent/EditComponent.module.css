@@ -1,0 +1,112 @@
+.container {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  border-radius: 10px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07),
+    inset 3px 3px 5px 0 rgba(248, 248, 248, 0.3);
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #041e4077;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.659);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.659);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #f35489;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: #041e4077;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 16px;
+  border-radius: 10px;
+  z-index: 9999;
+  min-width: 240px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.colorPickers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.colorPicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.colorPicker label {
+  font-size: 14px;
+}
+
+.colorPicker input[type="color"] {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modeButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.modeButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modeButton:hover {
+  background-color: #e0e0e0;
+}
+
+.modeButton.active {
+  background-color: #f35489;
+  color: #fff;
+}
